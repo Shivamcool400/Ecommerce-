@@ -6,6 +6,7 @@ const Footer = () => {
       <span>Comfyslot</span>
     </h5>
     <h5>All Rights reserved</h5>
+    <h5>Developer Shivam Gupta</h5>
   </Wrapper>
 }
 
