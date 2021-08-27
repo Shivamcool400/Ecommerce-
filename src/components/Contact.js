@@ -80,6 +80,19 @@ const Wrapper = styled.section`
       margin-bottom: 0;
     }
   }
+  @media (max-width: 400px) {
+    .contact-form {
+      width: 90vw;
+      max-width: 400px;
+      display: block;
+      
+    }
+    .form-input {
+      margin-bottom: 10px;
+      border-right: 2px solid var(--clr-black);
+    
+    }
+  }
   @media (min-width: 1280px) {
     padding: 15rem 0;
   }
