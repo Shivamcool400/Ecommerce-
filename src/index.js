@@ -7,8 +7,16 @@ import { FilterProvider } from './context/filter_context'
 import { CartProvider } from './context/cart_context'
 import { UserProvider } from './context/user_context'
 import { Auth0Provider } from '@auth0/auth0-react'
-
+//dev-imy2v0cr.us.auth0.com
+//Ar5X1uDirGXc4VTjbOI7htn55uxVpc4V
 ReactDOM.render(
+    <Auth0Provider
+    domain="dev-imy2v0cr.us.auth0.com"
+    clientId="Ar5X1uDirGXc4VTjbOI7htn55uxVpc4V"
+    redirectUri={window.location.origin}
+    cacheLocation="localstorage"
+  >
+      <UserProvider>
 <ProductsProvider>
     <FilterProvider>
         <CartProvider>
@@ -18,6 +26,8 @@ ReactDOM.render(
     </FilterProvider>
 
 </ProductsProvider>
+</UserProvider>
+</Auth0Provider>
 
 
 , document.getElementById('root'))
