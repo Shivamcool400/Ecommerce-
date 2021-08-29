@@ -70,9 +70,9 @@ if(action.type === TOGGLE_CART_ITEM_AMOUNT){
       }
      
     }
-    else {
+    
       return item
-    }
+    
   })
 
   return {...state,cart:tempCart}

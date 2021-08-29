@@ -20,6 +20,7 @@ const SingleProductPage = () => {
   const {single_product_loading: loading,single_product_error:error,single_product:product,fetchSingleProduct,} = useProductsContext()
   useEffect(()=>{
 fetchSingleProduct(`${url}${id}`)
+// eslint-disable-next-line
   },[id])
   useEffect(()=> {
 if(error){
@@ -27,6 +28,7 @@ if(error){
 history.push('/');
   },3000)
 }
+// eslint-disable-next-line
   },[error])
   console.log(product);
   if (loading) {

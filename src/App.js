@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Navbar, Sidebar, Footer } from './components'
-import { Home, Products, SingleProduct, About, Cart, Error, Checkout, PrivateRoute } from './pages'
+import { Home, Products, SingleProduct, About, Cart, Error, Checkout, PrivateRoute, AuthWrapper, } from './pages'
 
 
 
@@ -10,6 +10,7 @@ import { Home, Products, SingleProduct, About, Cart, Error, Checkout, PrivateRou
 
 function App() {
   return (
+    <AuthWrapper>
     <Router>
       <Navbar />
       <Sidebar />
@@ -37,6 +38,7 @@ function App() {
       </Switch>
       <Footer />
     </Router>
+    </AuthWrapper>
 
 
   )
