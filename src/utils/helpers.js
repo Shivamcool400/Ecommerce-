@@ -1,5 +1,5 @@
 export const formatPrice = (number) => {
-const newNumber = Intl.NumberFormat('en-us',{style:'currency',currency: 'INR'}).format(number/100)
+const newNumber = Intl.NumberFormat('en-us',{style:'currency',currency: 'INR'}).format(number)
 return newNumber
 
 }

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Footer = () => {
   return <Wrapper>
     <h5>&copy; {new Date().getFullYear()}
-      <span>Comfyslot</span>
+      <span>DAYA RAM SURESH KUMAR STORE</span>
     </h5>
     <h5>All Rights reserved</h5>
     <h5>Developer Shivam Gupta</h5>
@@ -19,7 +19,7 @@ const Wrapper = styled.footer`
   background: var(--clr-black);
   text-align: center;
   span {
-    color: var(--clr-primary-5);
+    color: /* var(--clr-primary-5) */#6da3b3;
   }
   h5 {
     color: var(--clr-white);

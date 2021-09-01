@@ -6,8 +6,8 @@ const Services = () => {
   return <Wrapper>
     <div className="section-center">
       <article className="header">
-        <h3>custom Furniture <br/>
-        built only for you</h3>
+        <h3>Famous DryFruits <br/>
+        only for you</h3>
         <p>
         simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting 
         simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting industry
@@ -38,7 +38,7 @@ const Wrapper = styled.section`
   }
   padding: 5rem 0;
 
-  background: var(--clr-primary-10);
+  background: /* var(--clr-primary-10) */#c3dfeb;
 
   .header h3 {
     margin-bottom: 2rem;
@@ -54,7 +54,7 @@ const Wrapper = styled.section`
     gap: 2.5rem;
   }
   .service {
-    background: var(--clr-primary-7);
+    background: /* var(--clr-primary-7) */#6da3b3;
     text-align: center;
     padding: 2.5rem 2rem;
     border-radius: var(--radius);

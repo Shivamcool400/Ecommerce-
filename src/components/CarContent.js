@@ -35,12 +35,13 @@ const Wrapper = styled.section`
     justify-content: space-between;
     margin-top: 2rem;
   }
+  
   .link-btn {
     background: transparent;
     border-color: transparent;
     text-transform: capitalize;
     padding: 0.25rem 0.5rem;
-    background: var(--clr-primary-5);
+    background: /* var(--clr-primary-5) */#6da3b3;
     color: var(--clr-white);
     border-radius: var(--radius);
     letter-spacing: var(--spacing);

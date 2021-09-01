@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import './Navbar.css'
 import logo from '../assets/logo.svg'
 import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
@@ -14,9 +15,9 @@ const Nav = () => {
   return <NavContainer>
     <div className="nav-center">
       <div className="nav-header">
-        <Link to="/">
-          <img src={logo} alt='logo' />
-        </Link>
+        
+        <Logo to='/'>DAYA RAM SURESH KUMAR STORE</Logo>
+        
         <button type="button" className="nav-toggle" onClick={openSidebar}>
           <FaBars />
         </button>
@@ -41,6 +42,27 @@ const Nav = () => {
   </NavContainer>
 
 }
+const Logo = styled(Link)`
+  color: black;
+  text-align: center;
+  margin-left: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Play', sans-serif;
+  &:hover {
+    color: grey;
+  }
+`;
+const Logo2 = styled(Link)`
+  color: black;
+  text-align: center;
+  font-size: 0.5rem;
+  font-weight: bold;
+  font-family: 'Play', sans-serif;
+  &:hover {
+    color: white;
+  }
+`;
 
 const NavContainer = styled.nav`
 
@@ -48,6 +70,12 @@ const NavContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
+  background:#6da3b3;
+
+  .header {
+    font-family: 'Courgette', cursive;
+    font-color: black;
+  }
 
   .nav-center {
     width: 90vw;
@@ -66,7 +94,7 @@ const NavContainer = styled.nav`
   .nav-toggle {
     background: transparent;
     border: transparent;
-    color: var(--clr-primary-5);
+    color: /* var(--clr-primary-5) */black;
     cursor: pointer;
     svg {
       font-size: 2rem;
@@ -100,7 +128,7 @@ const NavContainer = styled.nav`
         letter-spacing: var(--spacing);
         padding: 0.5rem;
         &:hover {
-          border-bottom: 2px solid var(--clr-primary-7);
+          border-bottom: 2px solid /* var(--clr-primary-7) */ #6fb7d6 ;
         }
       }
     }

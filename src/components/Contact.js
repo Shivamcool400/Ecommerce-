@@ -1,23 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
   return <Wrapper>
     <div className="section-center">
-      <h3>Join our newsletter and get 20% off</h3>
+      <h3>Order now ! and get 20% off</h3>
       <div className="content">
         <p>
         simply dummy text of the printing and typesetting industrysimply
          dummy text of the printing and typesetting industry
         </p>
-        <form className="contact-form">
-          <input type="email" className="form-input" placeholder="enter email"></input>
-        <button type="submit" className="submit-btn">
-          subscribe
-        </button>
-        </form>
-      </div>
+        
+          {/* <input type="email" className="form-input" placeholder="enter email"></input> */}
+          <Link to="/products" className="btn">
+         Book your  order Now!
+        </Link>
+        </div>
     </div>
+   
   </Wrapper>
 }
 const Wrapper = styled.section`
@@ -29,6 +30,12 @@ const Wrapper = styled.section`
     line-height: 2;
     max-width: 45em;
     color: var(--clr-grey-5);
+  }
+  .btn {
+    display: block;
+    width: 148px;
+    margin: 0 auto;
+    text-align: center;
   }
   .contact-form {
     width: 90vw;
@@ -58,7 +65,7 @@ const Wrapper = styled.section`
     text-transform: capitalize;
   }
   .submit-btn {
-    background: var(--clr-primary-5);
+    background: /* var(--clr-primary-5) */#6da3b3;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
     cursor: pointer;

@@ -17,7 +17,8 @@ const Sidebar = () => {
   return <SidebarContainer>
      <aside className={` ${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'} `}>
 <div className="sidebar-header">
-  <img src={logo} className="logo" alt="logo"></img>
+  {/* <img src={logo} className="logo" alt="logo"></img> */}
+  <Logo to='/'>DAYA RAM SURESH KUMAR STORE</Logo>
   <button className="close-btn" type="button" onClick={closeSidebar}>
     <FaTimes/>
   </button>
@@ -39,7 +40,17 @@ const Sidebar = () => {
      </aside>
   </SidebarContainer>
 }
-
+const Logo = styled(Link)`
+  color: black;
+  text-align: center;
+  margin-left: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Play', sans-serif;
+  &:hover {
+    color: grey;
+  }
+`;
 const SidebarContainer = styled.div`
   text-align: center;
   .sidebar-header {
